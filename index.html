@@ -3,60 +3,107 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Meron Woldekiros">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Waffles Recipe</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <h1>My Favorite Recipe</h1>
+<h1>My Favorite Recipe</h1>
 
-    <h2>Waffles</h2>
+<h2>Waffles</h2>
 
-    <p>
-        Source:
-        <a href="https://www.allrecipes.com/recipe/20513/classic-waffles/" target="_blank">
-            Classic Waffles Recipe
-        </a>
-    </p>
+<p>
+    Source:
+    <a href="https://www.allrecipes.com/recipe/20513/classic-waffles/" target="_blank">
+        Classic Waffles Recipe
+    </a>
+</p>
 
-    <figure>
-      <img src="waffles.jpg" alt="Waffles" height="250">
-        <figcaption>Delicious homemade waffles</figcaption>
-    </figure>
+<!-- FLEXBOX ROW 1 -->
+<div class="wrapper">
 
-    <h3>Ingredients</h3>
-    <ul>
-        <li>2 cups flour</li>
-        <li>2 eggs</li>
-        <li>1 ¾ cups milk</li>
-        <li>½ cup oil</li>
-        <li>1 tablespoon sugar</li>
-    </ul>
+    <!-- LEFT SIDE -->
+    <div class="box1">
 
-    <!--
-<!--
-<h3>Equipment</h3>
-<ul>
-    <li>Waffle maker</li>
-    <li>Bowl</li>
-    <li>Spoon</li>
-</ul>
--->
-    <h3>Directions</h3>
-    <ol>
-        <li>Mix all ingredients in a bowl.</li>
-        <li>Heat the waffle maker.</li>
-        <li>Pour batter into waffle maker.</li>
-        <li>Cook until golden brown.</li>
-    </ol>
+        <h3>Ingredients</h3>
+        <ul>
+            <li>2 cups flour</li>
+            <li>2 eggs</li>
+            <li>1 ¾ cups milk</li>
+            <li>½ cup oil</li>
+            <li>1 tablespoon sugar</li>
+        </ul>
 
-    <hr>
+        <!-- ⭐ RATE -->
+        <h3 class="rate">Rate This Recipe</h3>
 
-    <p style="text-align:right;">
-        This page created as academic activity only.
-    </p>
+        <fieldset>
+            <legend>How difficult is this recipe?</legend>
+
+            <input type="radio" name="level"> Easy
+            <input type="radio" name="level"> Intermediate
+            <input type="radio" name="level"> Hard
+        </fieldset>
+
+        <p>&nbsp;</p>
+
+        <!-- 🔄 CONVERSION -->
+        <h3>Conversion</h3>
+
+        <input type="text" id="tblspn" placeholder="Tablespoons"> =
+        <input type="text" id="cups" placeholder="Cups">
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="box2">
+
+        <figure>
+            <img src="waffles.jpg" alt="Waffles" height="250">
+            <figcaption>Delicious homemade waffles</figcaption>
+        </figure>
+
+    </div>
+
+</div>
+
+<!-- FLEXBOX ROW 2 -->
+<div class="wrapper">
+
+    <div class="box3">
+
+        <!-- ❌ Equipment (commented out as required) -->
+        <!--
+        <h3>Equipment</h3>
+        <ul>
+            <li>Waffle maker</li>
+            <li>Bowl</li>
+            <li>Spoon</li>
+        </ul>
+        -->
+
+        <h3>Directions</h3>
+        <ol>
+            <li>Mix all ingredients in a bowl.</li>
+            <li>Heat the waffle maker.</li>
+            <li>Pour batter into waffle maker.</li>
+            <li>Cook until golden brown.</li>
+        </ol>
+
+    </div>
+
+    <div class="box4">
+        <p style="text-align:right;">
+            This page created as academic activity only.
+        </p>
+    </div>
+
+</div>
 
 </body>
 </html>
-
-
